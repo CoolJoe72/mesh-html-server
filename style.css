@@ -1,30 +1,16 @@
-body { background: black url("images/stars.gif"); color:AliceBlue;}
+body { background-color: #000; color:AliceBlue; font-size:12pt; margin:0;}
+.content { background-color:#333; text-align:center; padding:5px;}
+.title { margin:5px auto .25em; font-size:3em; color:#369; text-shadow:0px 0px 15px #000;}
+.head { color:#6699cc; font-size:1.5em;}
+.menu a { margin:5px; display:inline-block; border:outset 2px #666; border-radius:5px; color:#369; background-color:#666; padding:5px; text-decoration:none;}
+.menu a:hover {background-color:#999; color:#333;}
+.menu a:active {border-style:inset;}
+ul {margin:auto; display:table;}
+li {text-align:left;}
+.footer{text-align:center; color:#999; font-size:13px; font-style:italic;}
 a:link {color:LIghtSkyBlue;}
 a:visited {color:SkyBlue;}
 a:active {color:SlateBlue;}
-
-table.myborder {
-border-width: 8px;
-border-spacing: 2px;
-border-style: ridge;
-border-color: maroon;
-border-bottom-color: DarkRed;
-border-right-color: DarkRed;
-border-collapse: collapse;
-}
-
-table.myborder th {
-border-width: 2px;
-padding: 1px;
-border-style: inset;
-border-color: maroon;
--moz-border-radius: 3px 3px 3px 3px;
-}
-
-table.myborder td {
-border-width: 2px;
-padding: 2px;
-border-style: inset;
-border-color: maroon;
--moz-border-radius: 3px 3px 3px 3px;
-}
+#sig {text-transform: uppercase;}
+table, td, tr {border:solid 3px green; margin:auto;}
+td.head {font-size:1.5em; font-weight:bolder; color:#69c;}

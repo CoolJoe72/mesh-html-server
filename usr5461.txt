@@ -1,0 +1,5 @@
+<h3>USR5461 802.11g Wireless MAXg® Router</h3>
+<p>This firmware is to be installed from the factory/manufacturer web interface for the device.<br />
+<a href=mesh_files/bbhn-3.1.0-usr5461-squashfs.bin>bbhn-3.1.0-usr5461-squashfs.bin</a> Size: 2.9M<br />
+<b>md5sum:</b> eb81f0d1d01b9736276cba0a8ac4f8d4<br />
+</p>

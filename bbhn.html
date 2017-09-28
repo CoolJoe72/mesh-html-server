@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- $Id: bbhn_linksys.html,v 1.4 2016/06/25 17:08:24 ke6qzu Exp $ -->
+<html lang="en-US" style="height: 100%;">
+<head>
+	<title>BBHN Linksys</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+		function loadDoc(page) {
+			if (page != "sfw") {
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("fwDoc").innerHTML = this.responseText;
+				}
+			};
+			xhttp.open("GET", page+'.txt', true);
+			xhttp.send();
+		}
+		}
+	</script>
+</head>
+<body>
+<div class="content">
+	<!--#include file="menu.html" -->
+	<div class="main">
+		<h1 class="title">Broadband-Hamnet Firmware</h1>
+Please select the device you wish to flash
+<select name="some_name" id="some_name" onchange="loadDoc(this.value);">
+	<option value="sfw">Select Firmware</option>
+	<option value="usr5461">usr5461</option>
+	<option value="wa840g">wa840g</option>
+	<option value="we800g">we800g</option>
+	<option value="wr850g">wr850g</option>
+	<option value="wrt150n">wrt150n</option>
+	<option value="wrt300n">wrt300n v1</option>
+	<option value="wrt54g">wrt54g&amp;gl</option>
+	<option value="wrt54g3g">wrt54g3g</option>
+	<option value="wrt54gs">wrt54gs</option>
+	<option value="wrt54gs">wrt54gs v4</option>
+	<option value="wrtsl54gs">wrtsl54gs</option>
+	<option value="ubiquiti">Ubiquiti</option>
+</select>
+<div id="fwDoc">
+	This is a test!!
+</div>
+<!--#include file="footer.html" -->
+</div>
+</body>
+</html>

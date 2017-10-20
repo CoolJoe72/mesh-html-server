@@ -1,0 +1,1 @@
+Linksys WRT54GS Wireless-G Broadband Router;This firmware is to be installed from the factory/manufacturer web interface for the device.;bbhn-3.1.0-wrt54gs-2.4-squashfs.bin;2.9M;3.1.0;36890182c43fb47fe8ff939b4c57c28a

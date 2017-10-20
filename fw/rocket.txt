@@ -1,0 +1,2 @@
+Ubiquiti Networks airMAX Rocket M;This is for the airMAX BaseStation Rocket M models: M2, M5, & M9. The Factory Image is for loading the image from airOS.;bbhn-3.1.0-ar71xx-generic-ubnt-rocket-m-squashfs-factory.bin;3.7M;3.1.0;581e5e9643a093d931710374e923b98f;Factory
+;The SysUpgrade is for loading the image from a previous version of BBHN.;bbhn-3.1.0-ar71xx-generic-ubnt-rocket-m-squashfs-sysupgrade.bin;3.7M;3.1.0;4b92f752b63229eca24b3e4366e86f34;SysUpgrade

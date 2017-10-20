@@ -1,0 +1,2 @@
+Ubiquiti Networks airMAX NanoStationM;This is for the airMAX NanoStation M2 & M5 (Not Loco - Use the Bullet-M image for Loco). Use the Factory image if you are installing firmware from airOS.;bbhn-3.1.0-ar71xx-generic-ubnt-nano-m-squashfs-factory.bin;3.7M;3.1.0;84688ded582e1cd98054811ffe122a5c;Factory
+;Use the SysUpgrade if you are updating the firmware from BBHN.;bbhn-3.1.0-ar71xx-generic-ubnt-nano-m-squashfs-sysupgrade.bin;3.7M;3.1.0;b0aca32a343e7f8907755cf99eb7ec86:SysUpgrade

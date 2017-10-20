@@ -1,0 +1,1 @@
+MOTOROLA WE800G Wireless 802.11g Ethernet Bridge;This firmware is to be installed from the factory/manufacturer web interface for the device.;bbhn-3.1.0-we800g-squashfs.bin;2.9M;3.1.0;ed537c278b6305aa4d2a2699f0ce0f50

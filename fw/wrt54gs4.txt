@@ -1,0 +1,1 @@
+Linksys WRT54G v4;This firmware is to be installed from the factory/manufacturer web interface for the device.;bbhn-3.1.0-wrt54gs_v4-2.4-squashfs.bin;2.9M;3.1.0;bbce7618509d72bd378c8e64d145fa3b

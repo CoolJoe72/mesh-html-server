@@ -1,0 +1,2 @@
+Ubiquiti Networks airMAX Bullet M;This firmware covers a number of devices including: Bullet M2 & M5 HP, Bullet M2 & M5 Titanium, NanoStation Loco M2, M5, & M9, Nanobridge M2, M5, & M9, AirGrid M2 & M5, Picostation M2. Use the Factory image if you are installing firmware from airOS.;bbhn-3.1.0-ar71xx-generic-ubnt-bullet-m-squashfs-factory.bin;3.7M;3.1.0;615fd8cee9db44d085a436940073e638;Factory
+;Use the SysUpgrade if you are updating the firmware from BBHN.;bbhn-3.1.0-ar71xx-generic-ubnt-bullet-m-squashfs-sysupgrade.bin;3.7M;3.1.0;cde30235dd6f3afe8513d3182f0a370f;SysUpgrade

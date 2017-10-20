@@ -1,0 +1,1 @@
+U.S. Robotics Wireless MAXg Router USR5461;This firmware is to be installed from the factory/manufacturer web interface for the device.;bbhn-3.1.0-usr5461-squashfs.bin;2.9M;bbhn-3.1.0;eb81f0d1d01b9736276cba0a8ac4f8d4

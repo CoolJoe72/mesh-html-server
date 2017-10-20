@@ -2,20 +2,43 @@
 <!-- $Id: bbhn_linksys.html,v 1.4 2016/06/25 17:08:24 ke6qzu Exp $ -->
 <html lang="en-US" style="height: 100%;">
 <head>
+	<meta charset="utf-8"/>
 	<title>BBHN Linksys</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		#fwDoc a:link, #fwDoc a:visited {background-color: limegreen;color: white;border: 2px solid green;padding: 10px 20px;text-align: center;text-decoration: none;font: 1.2em bold;}
+		#fwDoc a:hover, #fwDoc a:active {background-color: lime;text-shadow: 1px 1px 1px #444;color:oldlace;}
+		#fwDoc .links {position:absolute;margin-top:2em;right:15px;display:inline-block;}
+		#fwDoc .details span {width:80px;display:inline-block;}
+		//#fwDoc h3{-webkit-margin-before:0;-webkit-margin-after:.5em;}
+		#fwDoc .description{margin-bottom:.5em;}
+		#fwDoc {position:relative;width:75%;margin:auto;
+	/*temp border*/
+	border: 1px solid #999;
+	padding: 10px;
+}
+	</style>
 	<script type="text/javascript">
 		function loadDoc(page) {
-			if (page != "sfw") {
+			var dir = "fw/";
 			var xhttp = new XMLHttpRequest();
 			xhttp.onreadystatechange = function() {
 				if (this.readyState == 4 && this.status == 200) {
-					document.getElementById("fwDoc").innerHTML = this.responseText;
+					if (page.match(/^(sfw)$/)) {
+						document.getElementById("fwDoc").innerHTML = this.responseText;
+					} else {
+						var data = this.responseText.split('\n').filter(Boolean),doc = '';
+						for (i in data) data[i] = data[i].split(';');
+						for (x in data) {
+							var dl = !(data[x][6]) ? "Download":data[x][6];
+							doc+='<h3>'+data[x][0]+'</h3><div class="description">'+data[x][1]+'</div><div class="links"><a href="'+data[x][2]+'" download>'+dl+'</a></div><div class="details"><span>Filename:</span><strong>'+data[x][2]+'</strong></div><div class="details"><span>File Size:</span><strong>'+data[x][3]+'</strong></div><div class="details"><span>Version:</span><strong>'+data[x][4]+'</strong></div><div class="details"><span>md5sum:</span><strong>'+data[x][5]+'</strong></div>';
+						}
+						document.getElementById("fwDoc").innerHTML = doc;
+					}
 				}
 			};
-			xhttp.open("GET", page+'.txt', true);
+			xhttp.open("GET", dir+page+'.txt', true);
 			xhttp.send();
-		}
 		}
 	</script>
 </head>
@@ -24,24 +47,29 @@
 	<!--#include file="menu.html" -->
 	<div class="main">
 		<h1 class="title">Broadband-Hamnet Firmware</h1>
-Please select the device you wish to flash
-<select name="some_name" id="some_name" onchange="loadDoc(this.value);">
+<select name="some_name" id="some_name" style="display:block;margin: 2em auto;" onchange="loadDoc(this.value);">
 	<option value="sfw">Select Firmware</option>
-	<option value="usr5461">usr5461</option>
-	<option value="wa840g">wa840g</option>
-	<option value="we800g">we800g</option>
-	<option value="wr850g">wr850g</option>
-	<option value="wrt150n">wrt150n</option>
-	<option value="wrt300n">wrt300n v1</option>
-	<option value="wrt54g">wrt54g&amp;gl</option>
-	<option value="wrt54g3g">wrt54g3g</option>
-	<option value="wrt54gs">wrt54gs</option>
-	<option value="wrt54gs">wrt54gs v4</option>
-	<option value="wrtsl54gs">wrtsl54gs</option>
-	<option value="ubiquiti">Ubiquiti</option>
+	<option value="upgd">3.1.0 Upgrade</option>
+	<option value="patch">3.1.0 Patch</option>
+	<option value="usr5461">U.S. Robotics USR5461</option>
+	<option value="wa840g">Motorola WA840G</option>
+	<option value="we800g">Motorola WE800G</option>
+	<option value="wr850g">Motorola WR850G</option>
+	<option value="wrt150n">Linksys WRT150N</option>
+	<option value="wrt300n">Linksys WRT300Nv1</option>
+	<option value="wrt54g">Linksys WRT54G &amp; GL</option>
+	<option value="wrt54g3g">Linksys WRT54G3G</option>
+	<option value="wrt54gs">Linksys WRT54GS</option>
+	<option value="wrt54gs4">Linksys WRT54GSv4</option>
+	<option value="wrtsl54gs">Linksys WRTSL54GS</option>
+	<option value="ubnt">Ubiquiti Patch 3.1.0</option>
+	<option value="bullet">Ubiquiti BulletM + Other Ubiquiti</option>
+	<option value="rocket">Ubiquiti RocketM</option>
+	<option value="nano">Ubiquiti NanoStationM</option>
 </select>
 <div id="fwDoc">
-	This is a test!!
+	Please select the hardware you wish to flash with Broadband-Hamnet from the dropdown menu above.
+</div>
 </div>
 <!--#include file="footer.html" -->
 </div>

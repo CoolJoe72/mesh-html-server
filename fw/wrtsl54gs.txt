@@ -1,0 +1,1 @@
+Linksys WRTSL54GS Wireless-G Media Storage Link Router;This firmware is to be installed from the factory/manufacturer web interface for the device.;bbhn-3.1.0-wrtsl54gs-2.4-squashfs.bin;2.9M;3.1.0;ab3c684ea1edaac7306b32b9c09069a9

@@ -1,0 +1,1 @@
+Linksys WRT150N Wireless N Home Router with 4-Port Switch Mimo;This firmware is to be installed from the factory/manufacturer web interface for the device.;bbhn-3.1.0-wrt150n-2.4-squashfs.bin;2.9M;3.1.0;b5587f6e90fcae0e6b01fa9b26f1fccf
